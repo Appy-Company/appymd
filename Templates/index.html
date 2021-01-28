@@ -1,0 +1,1316 @@
+{% load static %}
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ApyyMD</title>
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %} ">
+  <script type="text/Javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/starter.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/website.css' %}">
+
+
+
+  <script type="text/Javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+
+
+  <style type="text/css">
+    button{
+      border: none;
+      outline: none;
+    }
+    .btn, .btn:active, .btn:focus, .btn:hover{
+      outline: none;
+      border: none;
+    }
+
+    .btn:focus{
+      outline-width: 1px;
+      border:1px;
+      box-shadow: none;
+      box-shadow:0 1px 2px rgba(0,0,0,0.3);
+      background-color: white;
+    }
+
+    .sl1{
+      height: 122px;
+      width: 200px;
+      margin-right: 10px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    #menute{
+      background-color: rgba(31,42,52,0.97);
+      color: white;
+    }
+
+
+    @media (max-width: 601px){
+      #thebtn{
+        display: none;
+      }
+      #menute{
+        position: fixed;
+        z-index: 20000000000;
+        height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        width: 80%;
+        top: 0;
+      }
+      .disno{
+        display: none;
+      }
+      #menute::-webkit-scrollbar{
+        border: 1px solid white;
+        width: 1px;
+        box-shadow: 0 50px 50px 0 rgba(0,0,0,0.9);
+      }
+      #navout{
+        display:block;
+      }
+    }
+
+    .bg-that{
+      background-color: rgb(38,48,58);
+      color: rgb(210,210,210);
+    }
+
+    .text-a{
+      color: rgb(210,210,210);
+    }
+
+    .text-a:hover{
+      color: white;
+    }
+
+    #navout{
+      position: fixed;
+      top: 11px;
+      right: 25px;
+      z-index:200000000000000000000000000000000000000000000000;
+      display: none;
+    }
+
+    @media (min-width: 602px){
+      #navout{
+        z-index: -1;
+      }
+    }
+
+  </style>
+
+
+
+</head>
+
+<body class="p-0 m-0">
+
+<div class="container-fluid p-0 m-0 bady">
+
+<button id="thebtn" class="mbn-outline-secondary mbn-sm navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i></button>
+
+<div class="container-fluid p-0 m-0 ntik">
+  <!-- ======= Header ======= -->
+      <nav class="navbar navbar-expand-sm sticy-top seeya navtik mshadow" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">AppyMD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            </ul>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<div id="navout" class="container-fluid p-0 m-0 d-flex justify-content-end text-right navout">
+    <p class="mright mt-2"><span><i class="fas fa-bars fa-2x"></i></span></p>
+</div>
+
+<style type="text/css">
+  @media (min-width: 602px){
+    .navout{
+      display: none;
+    }
+  }
+</style>
+
+      <div class="container-fluid p-0 m-0 pagey p-0 m-0">
+<div class="container-fluid p-0 m-0"></div>
+        <div class="row p-0 m-0" style="width: 100%;">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 mine searcher siver mshadow disno" id="menute">
+            <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+              <div><p class="mfont-6 mt-2">AppyMD links</p></div>
+              <h2 mtext-blue class="h6 pt-4 pb-3 mb-4 border-bottom text-light">Our Components</h2>
+              <div><h4>Pages</h4>
+                <p><a href="{% url 'index' %}" class="text-a">Main page</a></p>
+                <p><a href="#downloa" class="text-a">Download</a></p>
+              </div>
+              <nav class="small" id="toc">
+                <ul class="list-unstyled">
+                  <li class="my-2">
+                    <button class="d-inline-flex align-items-center collapsed text-ligh bg-that mfont-4" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse"><i class="fas fa-book"></i> &nbsp;&nbsp; Contents</button>
+                    <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#tables">Topography</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#figures">Effects</a></li>
+                    </ul>
+                  </li>
+                  <li class="my-2">
+                    <button class="d-inline-flex align-items-center collapsed bg-that mfont-4" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse"><i class="fas fa-paint-brush"></i> &nbsp;&nbsp;Beauty</button>
+                    <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#buttonys-ou">Outline</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#roundbys-sm">small</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#formys-md">Material form</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#formys-sw">Switch</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#menuys">functional classes</a></li>
+                    </ul>
+                  </li>
+                  <li class="my-2">
+                    <button class="d-inline-flex align-items-center collapsed mc bg-that mfont-4 " data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse"><i class="fas fa-cogs"></i> &nbsp;&nbsp; Components</button>
+                    <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#alertys">Alerts</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#badgeys">Badges</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#bannerys">Banners</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#buttonys">Buttons</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#buttong">Button-groups</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#fontys">Font-sizes</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#formys">Forms</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#listys">Lists</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#listg">List-group</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#popuys">Popup Menu</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#menuys">NavDrawer</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#roundbys">Rounded buttons</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#shadowys">Shadow</a></li>
+                      <li><a  class="d-inline-flex align-items-center rounded mr-linkers text-light" href="#slidys">H-scroll</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+
+          <div class="col-sm-12 col-md-9 col-lg-9 col-xl-8 mine main-conten p-4 pt-2 sticky-top-lg toppers mbg-white" style="z-index: 10; height: max-content;">
+            <!--form class="mt-0 form-group input-group myformy">
+              <input type="" placeholder="Search in website" class="form-control" name="">
+            </form-->
+
+            <div><h1 class="mfont-12 mbg-highlight">AppyMD</h1></div>
+            <div class="container-fluid p-0 m-0" id="buttonys">
+              <p class="h1 mtext-blue mb-5">Buttons</p>
+              <div class="container-fluid">
+                <button class="mbn mt-2">download</button>
+                <button class="mbn mt-2 mbg-danger">download</button>
+                <button class="mbn mt-2 mbg-info">download</button>
+                <button class="mbn mt-2 mbg-success">download</button>
+                <button class="mbn mt-2 mbg-warning">download</button>
+                <button class="mbn mt-2 mbg-secondary">download</button>
+                <button class="mbn mbg-mint mt-2">download</button>
+              </div>
+              <div class="container-fluid mt-4" id="buttonys-ou">
+                <button class="mbn-outline mt-2">download</button>
+                <button class="mbn-outline-orange mt-2">download</button>
+                <button class="mbn-outline-danger mt-2">download</button>
+                <button class="mbn-outline-success mt-2">download</button>
+                <button class="mbn-outline-secondary mt-2">download</button>
+                <button class="mbn-outline-info mt-2">download</button>
+                <button class="mbn-outline-mint mt-2">download</button>
+              </div>
+              <div class="container-fluid mt-4">
+                <button class="mbn-outline mbn-sm mt-2">download</button>
+                <button class="mbn-outline-orange mbn-sm mt-2">download</button>
+                <button class="mbn-outline-danger mbn-sm mt-2">download</button>
+                <button class="mbn-outline-success mbn-sm mt-2">download</button>
+                <button class="mbn-outline-secondary mbn-sm mt-2">download</button>
+                <button class="mbn-outline-info mbn-sm mt-2">download</button>
+              </div>
+              <div class="container-fluid mt-4">
+                <button class="mbn-outline mbn-sm mcurved mt-2">download</button>
+                <button class="mbn-outline-orange  mbn-sm mcurved mt-2">download</button>
+                <button class="mbn-outline-danger  mbn-sm mcurved mt-2">download</button>
+                <button class="mbn-outline-success  mbn-sm mcurved mt-2">download</button>
+                <button class="mbn-outline-secondary  mbn-sm mcurved mt-2">download</button>
+                <button class="mbn-outline-info  mbn-sm mt-2 mcurved">download</button>
+              </div>
+              <div class="container-fluid mt-3">
+                <button class="mbn mt-2 mcurved">download</button>
+                <button class="mbn mt-2 mcurved mbg-danger">download</button>
+                <button class="mbn mt-2 mcurved mbg-info">download</button>
+                <button class="mbn mt-2 mcurved mbg-success">download</button>
+                <button class="mbn mt-2 mcurved mbg-warning">download</button>
+                <button class="mbn mt-2 mcurved mbg-secondary">download</button>
+              </div>
+              <div class="container-fluid mt-4">
+                <button class="mbn-outline mcurved mt-2">download</button>
+                <button class="mbn-outline-orange mcurved mt-2">download</button>
+                <button class="mbn-outline-danger mcurved mt-2">download</button>
+                <button class="mbn-outline-success mcurved mt-2">download</button>
+                <button class="mbn-outline-secondary mcurved mt-2">download</button>
+                <button class="mbn-outline-info mcurved mt-2">download</button>
+              </div>
+              <div class="container-fluid mt-3 btn-group" id="buttong">
+                <button class="mbn mbg-mint mt-2">download</button>
+                <button class="mbn mbg-mint mt-2">download</button>
+                <button class="mbn mbg-mint mt-2">download</button>
+                <button class="mbn mbg-mint mt-2">download</button>
+              </div>
+
+
+              <div class="container-fluid srccode-da p-0 m-0 mt-5">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy14" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea class="srccode javascript" id="text14">
+
+                      <div class="container-fluid">
+                        <button class="mbn mt-2">download</button>
+                        <button class="mbn mt-2 mbg-danger">download</button>
+                        <button class="mbn mt-2 mbg-info">download</button>
+                        <button class="mbn mt-2 mbg-success">download</button>
+                        <button class="mbn mt-2 mbg-warning">download</button>
+                        <button class="mbn mt-2 mbg-secondary">download</button>
+                      </div>
+                      <div class="container-fluid mt-4">
+                        <button class="mbn-outline mt-2">download</button>
+                        <button class="mbn-outline-orange mt-2">download</button>
+                        <button class="mbn-outline-danger mt-2">download</button>
+                        <button class="mbn-outline-success mt-2">download</button>
+                        <button class="mbn-outline-secondary mt-2">download</button>
+                        <button class="mbn-outline-info mt-2">download</button>
+                      </div>
+                      <div class="container-fluid mt-4">
+                        <button class="mbn-outline mbn-sm mt-2">download</button>
+                        <button class="mbn-outline-orange mbn-sm mt-2">download</button>
+                        <button class="mbn-outline-danger mbn-sm mt-2">download</button>
+                        <button class="mbn-outline-success mbn-sm mt-2">download</button>
+                        <button class="mbn-outline-secondary mbn-sm mt-2">download</button>
+                        <button class="mbn-outline-info mbn-sm mt-2">download</button>
+                      </div>
+                      <div class="container-fluid mt-4">
+                        <button class="mbn-outline mbn-sm mcurved mt-2">download</button>
+                        <button class="mbn-outline-orange  mbn-sm mcurved mt-2">download</button>
+                        <button class="mbn-outline-danger  mbn-sm mcurved mt-2">download</button>
+                        <button class="mbn-outline-success  mbn-sm mcurved mt-2">download</button>
+                        <button class="mbn-outline-secondary  mbn-sm mcurved mt-2">download</button>
+                        <button class="mbn-outline-info  mbn-sm mt-2 mcurved">download</button>
+                      </div>
+                      <div class="container-fluid mt-3">
+                        <button class="mbn mt-2 mcurved">download</button>
+                        <button class="mbn mt-2 mcurved mbg-danger">download</button>
+                        <button class="mbn mt-2 mcurved mbg-info">download</button>
+                        <button class="mbn mt-2 mcurved mbg-success">download</button>
+                        <button class="mbn mt-2 mcurved mbg-warning">download</button>
+                        <button class="mbn mt-2 mcurved mbg-secondary">download</button>
+                      </div>
+                      <div class="container-fluid mt-4">
+                        <button class="mbn-outline mcurved mt-2">download</button>
+                        <button class="mbn-outline-orange mcurved mt-2">download</button>
+                        <button class="mbn-outline-danger mcurved mt-2">download</button>
+                        <button class="mbn-outline-success mcurved mt-2">download</button>
+                        <button class="mbn-outline-secondary mcurved mt-2">download</button>
+                        <button class="mbn-outline-info mcurved mt-2">download</button>
+                      </div>
+                   
+              </textarea>
+              </div>
+            </div>
+            
+
+            <div class="container-fluid p-0 m-0 mt-5" id="fontys">
+              <p class="h1 mtext-blue mmt-100">Font-sizes</p>
+              <div class="container-fluid">
+                <p class="mfont-12">mfont size</p>
+                <p class="mfont-11">mfont size</p>
+                <p class="mfont-10">mfont size</p>
+                <p class="mfont-9">mfont size</p>
+                <p class="mfont-8">mfont size</p>
+                <p class="mfont-7">mfont size</p>
+                <p class="mfont-6">mfont size</p>
+                <p class="mfont-5">mfont size</p>
+                <p class="mfont-4">mfont size</p>
+                <p class="mfont-3">mfont size</p>
+                <p class="mfont-2">mfont size</p>
+                <p class="mfont-1">mfont size</p>
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy13" class="mbn-outline-mint copyy">copy</button></div>
+                    <textarea id="text13" class="srccode">
+
+        <div class="container-fluid">
+              <p class="mfont-12">mfont size</p>
+              <p class="mfont-11">mfont size</p>
+              <p class="mfont-10">mfont size</p>
+              <p class="mfont-9">mfont size</p>
+              <p class="mfont-8">mfont size</p>
+              <p class="mfont-7">mfont size</p>
+              <p class="mfont-6">mfont size</p>
+              <p class="mfont-5">mfont size</p>
+              <p class="mfont-4">mfont size</p>
+              <p class="mfont-3">mfont size</p>
+              <p class="mfont-2">mfont size</p>
+              <p class="mfont-1">mfont size</p>
+        </div>
+
+                   </textarea>
+              </div>
+
+            </div>
+
+            <div class="container-fluid p-0 m-0 mt-5 mmt-100" id="listys">
+              <p class="h1 mtext-blue mmt-100">Lists</p>
+              <div class="container-fluid p-0 m-0 mt-5">
+                <p class="h2 mtext-blue mb-4">List items</p>
+                <div class="container-fluid p-0 m-0">
+                  <div class="mitems">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <button class="mbn-round mt-2 bg-danger"><i class="fab fa-pinterest fa-2x text-light"></i></button>
+                        <button class="mbn-round mt-2 bg-primary"><i class="fab fa-twitter fa-2x text-light"></i></button>
+                        <button class="mbn-round mt-2 bg-success"><i class="fab fa-whatsapp fa-2x text-light"></i></button>
+                        <button class="mbn-round mt-2 bg-warning"><i class="fab fa-python fa-2x text-dark"></i></button>
+                        <button class="mbn-round mt-2 bg-warning"><i class="fab fa-amazon fa-2x text-dark"></i></button>
+                        <button class="mbn-round mt-2 text-dark"><i class="fab fa-google fa-2x"></i></button>
+                      </div>
+                      <div class="col-md-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mitems">
+                    <div class="row">
+                      <div class="col-3 col-md-1">
+                        <button class="mbn-round mt-2 mtext-blight"><i class="fas fa-phone"></i></button>
+                      </div>
+                     <div class="col-9 col-md-11 mfont-4">
+                        +256 124 26638<br>appymd@gmail.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mitems">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco .
+                  </div>
+                </div>
+              </div>
+
+              <p class="h2 mtext-blue mt-5" id="listg">List groups</p>
+              <div class="container-fluid p-0 m-0">
+                <div class="mchart">
+                  <ul class="mchart-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+                    <li class="bg-success text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+                    <li class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+                    <li class="bg-primary text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+                    <li class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+                    <li class="bg-dark text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="container-fluid p-0 m-0">
+                <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                  <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy1" class="mbn-outline-mint copyy">copy</button></div>
+                  <textarea class="srccode" id="text1">
+    <div class="container-fluid p-0 m-0">
+        <div class="mitems">
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="mbn-round mt-2 bg-danger"><i class="fab fa-pinterest fa-2x text-light"></i></button>
+                    <button class="mbn-round mt-2 bg-primary"><i class="fab fa-twitter fa-2x text-light"></i></button>
+                    <button class="mbn-round mt-2 bg-success"><i class="fab fa-whatsapp fa-2x text-light"></i></button>
+                    <button class="mbn-round mt-2 bg-warning"><i class="fab fa-python fa-2x text-dark"></i></button>
+                    <button class="mbn-round mt-2 bg-warning"><i class="fab fa-amazon fa-2x text-dark"></i></button>
+                    <button class="mbn-round mt-2 text-dark"><i class="fab fa-google fa-2x"></i></button>
+                </div>
+                <div class="col-md-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation
+                </div>
+            </div>
+        </div>
+        <div class="mitems">
+            <div class="row">
+                <div class="col-3 col-md-1">
+                        <button class="mbn-round mt-2 mtext-blight"><i class="fas fa-phone"></i></button>
+                </div>
+                <div class="col-9 col-md-11 mfont-4">
+                        +256 124 26638<br>appymd@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="mitems">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco .
+        </div>
+    </div>
+
+    <p class="h2 mtext-blue mt-5 mb-4">List groups</p>
+    <div class="container-fluid p-0 m-0">
+        <div class="mchart">
+            <ul class="mchart-list">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+
+                <li class="bg-primary text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+
+                <li class="bg-dark text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sitamet,consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam,quis nostrud exercitation</li>
+            </ul>
+        </div>
+    </div>
+                  </textarea>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mmt-100" id="formys">
+              <p class="h1 mtext-blue mmt-100">Forms</p>
+              <div class="container-fluid">
+                <form class="mt-5">
+                  <input type="" class="mform" placeholder="best as search field" name="">
+                </form>
+
+                <div class="mmenu-bar">
+                  <button class="mm-bar-bn mm-bar-normal"><i class="fab fa-python text-dark"></i></button>
+                 <form class="mmf-bar">
+                   <input type="" class="mm-bar-form" placeholder="Search here" name="">
+                   <button class="mm-bar-bn"><i class="fas fa-microphone text-dark"></i></button>
+                 </form>
+               </div>
+
+              <div class="keeyp" id="formys-md">
+               <form class="mform-master">
+                <input type="" class="mfinput mfinput-1" name="">
+                <label class="mflab mflab-1">Username</label>
+               </form>
+
+               <form class="mform-master">
+                <input type="password" class="mfinput mfinput-2" name="">
+                <label class="mflab mflab-2">Password</label>
+               </form>
+             </div>
+
+               <!-- SWITCH -->
+               <form class="mt-3" id="formys-sw">
+                 <div class="mswi-body">
+                   <input type="Checkbox" name="">
+                   <div class="mswi-bg"></div>
+                   <div class="mswi"></div>
+                 </div>
+               </form>
+
+               <form class="mt-3">
+                 <div class="mswi-body">
+                   <input type="Checkbox" name="">
+                   <div class="mswi-bg"></div>
+                   <div class="mswi"></div>
+                 </div>
+               </form>
+
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy2" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea class="srccode" id="text2">
+    <div class="container-fluid">
+        <form class="mt-5">
+            <input type="" class="mform" placeholder="best as search field" name="">
+        </form>
+
+        <div class="mmenu-bar">
+            <button class="mm-bar-bn mm-bar-normal"><i class="fab fa-python text-dark"></i></button>
+            <form class="mmf-bar">
+                <input type="" class="mm-bar-form" placeholder="Search here" name="">
+                <button class="mm-bar-bn"><i class="fas fa-microphone text-dark"></i></button>
+            </form>
+        </div>
+
+      <form class="mform-master">
+            <input type="" class="mfinput mfinput-1" name="">
+            <label class="mflab mflab-1">Username</label>
+      </form>
+
+      <form class="mform-master">
+            <input type="password" class="mfinput mfinput-2" name="">
+            <label class="mflab mflab-2">Password</label>
+      </form>
+
+        <!-- SWITCH -->
+        <form class="mt-3">
+            <div class="mswi-body">
+                <input type="Checkbox" name="">
+                <div class="mswi-bg"></div>
+                <div class="mswi"></div>
+            </div>
+        </form>
+
+        <form class="mt-3">
+            <div class="mswi-body">
+                <input type="Checkbox" name="">
+                <div class="mswi-bg"></div>
+                <div class="mswi"></div>
+            </div>
+        </form>
+
+    </div>
+                </textarea>
+
+              </div>
+            </div>
+
+            <div class="container-fluid p-0 m-0 mmt-100">
+              <p class="h1 mtext-blue mmt-100">Progress bars</p>
+              <div class="container-fluid p-0 m-0">
+            
+                <div class="mload mload-lg">
+                  <div class="mperload "></div>
+                </div>
+                <div class="mload mload-md">
+                  <div class="mperload"></div> 
+                </div>
+
+                <div class="mload">
+                  <div class="mperload"></div>
+                </div>
+
+                <div>
+                    <label for="customRange3" class="form-label">only bootstrap</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                </div>
+              </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy3" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text3" class="srccode">
+    <div class="container-fluid p-0 m-0">
+        <div class="mload mload-lg">
+            <div class="mperload bg-warning"></div>
+        </div>
+
+        <div class="mload mload-md">
+            <div class="mperload bg-danger"></div> 
+        </div>
+
+        <div class="mload">
+            <div class="mperload"></div>
+        </div>
+
+        <div>
+            <label for="customRange3" class="form-label">only bootstrap</label>
+            <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+        </div>
+    </div>
+                </textarea>
+              </div>
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mmt-100" id="alertys">
+              <p class="h1 mtext-blue mmt-100">Alerts</p>
+              <div class="container-fluid p-0 m-0">
+                <p class="msuccess-just-alert">
+                  <b>Lorem</b> ipsum magna aliqua. Ut enim ad minim veniam,
+                  quis <b>Thanks for downloading.</b> laboris nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+
+              <div class="container-fluid p-0 m-0">
+                <p class="msuccess-alert">
+                  <b>Lorem</b> ipsum quis <b>Thanks for downloading.</b> laboris nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+
+              <div class="container-fluid p-0 m-0">
+                <p class="mdanger-just-alert">
+                  <b>Lorem</b> ipsum dolor
+                  quis <b>Failed: please retry process.</b> laboris nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+
+              <div class="container-fluid p-0 m-0">
+                <p class="mdanger-alert">
+                  <b>Lorem</b> ipsum dolor sit 
+                  quis <b>Failed: please retry process.</b> laboris nisi ut aliquip ex ea commodo
+                </p>
+              </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div  class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy4" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text4" class="srccode">
+    <div class="container-fluid p-0 m-0">
+        <p class="msuccess-just-alert">
+            <b>Lorem</b> ipsum dolor 
+                  quis <b>Thanks for downloading.</b> laboris nisi ut aliquip ex ea commodo
+        </p>
+    </div>
+
+    <div class="container-fluid p-0 m-0">
+        <p class="msuccess-alert">
+            <b>Lorem</b> ipsum 
+                  quis <b>Thanks for downloading.</b> laboris nisi ut aliquip ex ea commodo
+        </p>
+    </div>
+
+    <div class="container-fluid p-0 m-0">
+        <p class="mdanger-just-alert">
+            <b>Lorem</b> ipsum dolor 
+                  quis <b>Failed: please retry process.</b> laboris nisi ut aliquip ex ea commodo
+        </p>
+    </div>
+
+    <div class="container-fluid p-0 m-0">
+        <p class="mdanger-alert">
+            <b>Lorem</b> ipsum dolor sit 
+                  quis <b>Failed: please retry process.</b> laboris nisi ut aliquip ex ea commodo
+        </p>
+    </div>                  
+                </textarea>
+              </div>
+            </div>
+
+            <div class="container-fluid p-0 m-0 mt-5" id="badgeys">
+              <p class="h1 mtext-blue mmt-100">Badges</p>
+              <div class="container-fluid">
+                <span class="mbadge mbadge-danger">badge</span>
+                <span class="mbadge mbadge-success">badge</span>
+                <span class="mbadge mbadge-secondary">badge</span>
+                <span class="mbadge mbadge-brown">badge</span>
+                <span class="mbadge mbadge-warning">badge</span>
+                <span class="mbadge mbadge-danger bg-primary">badge</span>
+                <span class="mbadge mbadge-dark">badge</span>
+                <br>
+
+                <div class="d-flex mt-3">
+                  <div class="mbadge mbadge-dark mbadge-left">downloads</div>
+                  <div class="mbadge mbadge-danger mbadge-right">over 4k</div>
+                </div>
+
+                <div class="d-flex mt-3">
+                  <div class="mbadge mbadge-dark mbadge-left">downloads</div>
+                  <div class="mbadge mbadge-green mbadge-right">over 4k</div>
+                </div>
+
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy5" class="mbn-outline-mint copyy">copy</button></div>
+                    <textarea id="text5" class="srccode">
+    <div class="container-fluid">
+        <span class="mbadge mbadge-danger">badge</span>
+        <span class="mbadge mbadge-success">badge</span>
+        <span class="mbadge mbadge-secondary">badge</span>
+        <span class="mbadge mbadge-brown">badge</span>
+        <span class="mbadge mbadge-warning">badge</span>
+        <span class="mbadge mbadge-danger bg-primary">badge</span>
+        <span class="mbadge mbadge-dark">badge</span>
+        <br>
+
+        <div class="d-flex mt-3">
+            <div class="mbadge mbadge-dark mbadge-left">downloads</div>
+            <div class="mbadge mbadge-danger mbadge-right">over 4k</div>
+        </div>
+
+        <div class="d-flex mt-3">
+            <div class="mbadge mbadge-dark mbadge-left">downloads</div>
+            <div class="mbadge mbadge-green mbadge-right">over 4k</div>
+        </div>
+    </div>
+                   </textarea>
+              </div>
+
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5" id="slidys">
+              <p class="h1 mtext-blue mmt-100">H-scroll</p>
+              <p>Don't mind not scrolling in chrome I just removed the <b>-webkit-scrollbar</b> but you can add it back with<br>
+              </p><p class="mtext-blue">.mslider-container::-webkit-scrollbar{
+                display:block;
+              }<br>.mslider::-webkit-scrollbar{
+                display:block;
+              }</p><p class="mbg-highlight"><b>sl1</b> is just my css, just add yours.</p>
+              <div class="container-fluid p-0 m-0">
+
+               <div class="mslider-container">
+                 <div class="mslider" style="width: 2000px;">
+                   <div class=" sl1">
+                     <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/mat.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/girl2.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/comp.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/home.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/pink.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/site.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                     <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                 </div>
+               </div>
+
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy6" class="mbn-outline-mint copyy">copy</button></div>
+                    <textarea id="text6" class="srccode">
+
+      <div class="container-fluid p-0 m-0">
+            <div class="mslider-container">
+                  <div class="mslider" style="width: 2000px;">
+                   <div class=" sl1">
+                        <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/mat.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/girl2.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/comp.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/home.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/pink.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/site.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+                   <div class=" sl1">
+                        <img src="{% static "images/girl1.jpg" %}" class="img-fluid">
+                   </div>
+              </div>
+          </div>
+       </div>
+
+                   </textarea>
+              </div>
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5" id="roundbys">
+              <p class="h1 mtext-blue mmt-100">Rounded buttons</p>
+              <div class="container-fluid">
+                <div class="container-fluid p-0 m-0 mb-5">
+                  <button class="mbn-round mt-2 bg-danger"><i class="fab fa-pinterest fa-2x text-light"></i></button>
+                  <a href="#"><button class="mbn-round mt-2 bg-primary"><i class="fab fa-twitter fa-2x text-light"></i></button></a>
+                  <button class="mbn-round mt-2 bg-success"><i class="fab fa-whatsapp fa-2x text-light"></i></button>
+                  <button class="mbn-round mt-2 bg-warning"><i class="fab fa-amazon fa-2x text-dark"></i></button>
+                  <button class="mbn-round mt-2 text-dark"><i class="fab fa-google fa-2x"></i></button>
+                  <button class="mbn-round mt-2 bg-primary"><i class="fas fa-times fa-2x text-light"></i></button>
+                  <button class="mbn-round mt-2 bg-warning"><i class="fas fa-trash fa-2x text-dark"></i></button>
+                  <button class="mbn-round mt-2 bg-danger"><i class="fab fa-instagram fa-2x text-light"></i></button>
+                </div>
+
+                <div class="container-fluid p-0 m-0 mb-5" id="roundbys-sm">
+                  <button class="mbn-round mbn-round-sm mt-2 bg-danger"><i class="fab fa-pinterest text-light"></i></button>
+                  <a href="#"><button class="mbn-round mbn-round-sm mt-2 bg-primary"><i class="fab fa-twitter text-light"></i></button></a>
+                  <button class="mbn-round mbn-round-sm mt-2 bg-success"><i class="fab fa-whatsapp text-light"></i></button>
+                  <button class="mbn-round mbn-round-sm mt-2 bg-warning"><i class="fab fa-amazon text-dark"></i></button>
+                  <button class="mbn-round mbn-round-sm mt-2 text-dark"><i class="fab fa-google"></i></button>
+                  <button class="mbn-round mbn-round-sm mt-2 bg-primary"><i class="fas fa-times text-light"></i></button>
+                  <button class="mbn-round mbn-round-sm mt-2 bg-warning"><i class="fas fa-trash text-dark"></i></button>
+                  <button class="mbn-round mbn-round-sm mt-2 bg-danger"><i class="fab fa-instagram text-light"></i></button>
+                </div>
+
+
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy7" class="mbn-outline-mint copyy">copy</button></div>
+                    <textarea id="text7" class="srccode">
+      <div class="container-fluid p-0 m-0 mb-5">
+          <button class="mbn-round mt-2 bg-danger"><i class="fab fa-pinterest fa-2x text-light"></i></button>
+          <a href="#"><button class="mbn-round mt-2 bg-primary"><i class="fab fa-twitter fa-2x text-light"></i></button></a>
+          <button class="mbn-round mt-2 bg-success"><i class="fab fa-whatsapp fa-2x text-light"></i></button>
+          <button class="mbn-round mt-2 bg-warning"><i class="fab fa-amazon fa-2x text-dark"></i></button>
+          <button class="mbn-round mt-2 text-dark"><i class="fab fa-google fa-2x"></i></button>
+          <button class="mbn-round mt-2 bg-primary"><i class="fas fa-times fa-2x text-light"></i></button>
+          <button class="mbn-round mt-2 bg-warning"><i class="fas fa-trash fa-2x text-dark"></i></button>
+          <button class="mbn-round mt-2 bg-danger"><i class="fab fa-instagram fa-2x text-light"></i></button>
+      </div>
+
+      <div class="container-fluid p-0 m-0 mb-5">
+          <button class="mbn-round mbn-round-sm mt-2 bg-danger"><i class="fab fa-pinterest text-light"></i></button>
+          <a href="#"><button class="mbn-round mbn-round-sm mt-2 bg-primary"><i class="fab fa-twitter text-light"></i></button></a>
+          <button class="mbn-round mbn-round-sm mt-2 bg-success"><i class="fab fa-whatsapp text-light"></i></button>
+          <button class="mbn-round mbn-round-sm mt-2 bg-warning"><i class="fab fa-amazon text-dark"></i></button>
+          <button class="mbn-round mbn-round-sm mt-2 text-dark"><i class="fab fa-google"></i></button>
+          <button class="mbn-round mbn-round-sm mt-2 bg-primary"><i class="fas fa-times text-light"></i></button>
+          <button class="mbn-round mbn-round-sm mt-2 bg-warning"><i class="fas fa-trash text-dark"></i></button>
+          <button class="mbn-round mbn-round-sm mt-2 bg-danger"><i class="fab fa-instagram text-light"></i></button>
+      </div>
+                   </textarea>
+              </div>
+
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5" id="bannerys">
+              <p class="h1 mtext-blue mmt-100">Banners</p>
+              <div class="container-fluid">
+                <div class="container-fluid mround p-0 m-0" style="background-image: url('{% static "images/pink.jpg" %}'); background-size:cover; background-position:center;">
+                  <div class="mbanner d-flex justify-content-center align-items-center" style="background-image:linear-gradient(to right, rgba(52, 73, 94,0.7) ,rgba(0,0,0,0.9));">
+                    <p class="h4 text-light">My phone Apps are Material Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy8" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text8" class="srccode" style="height: 190px">
+      <div class="container-fluid">
+            <div class="container-fluid mround p-0 m-0" style="background-image: url('{% static "images/pink.jpg" %}'); background-size:cover; background-position:center;">
+                  <div class="mbanner d-flex justify-content-center align-items-center" style="background-image:linear-gradient(to right, rgba(52, 73, 94,0.7) ,rgba(0,0,0,0.9));">
+                        <p class="h4 text-light">My phone Apps are Material Design</p>
+                  </div>
+            </div>
+      </div>
+                </textarea>
+              </div>
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5" id="menuys">
+              <p class="h1 mtext-blue mmt-100">Menu</p>
+              <div class="container-fluid">
+                <p>Better for mobile don't mind the off state on the big browser.</p>
+                <p>Best if one on a Page for the button to work well.</p>
+                <p class="mfont-3 mbg-highlight pl-3">Press close to go away or add class <b>mdra-close</b> to any button on a page.</p>
+                <button class="mbn mbg-mint mmenu-call">show popup menu</button>
+
+                <button class="mbn-outline-mint mdra">show popup menu</button>
+
+                <div class="mnav-dra">
+                  <div class="mnav-case bg-dark">
+                    <img src="{% static "images/site.jpg" %}" class="mimg">
+                    <ul class="mnav-item">
+                      <li class="mdra-close text-light">close</li>
+                      <li class="text-light">Language</li>
+                      <li class="text-light">Server</li>
+                      <li class="text-light">Lessons</li>
+                      <li class="text-light">Downloads</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <ul class="mmenu bg-dark moff">
+                  <li class="text-light">Reload App</li>
+                  <li class="text-light">Newfile</li>
+                  <li class="text-light">Save</li>
+                  <li class="text-light">Open in Browser</li>
+                  <li class="text-light">Copy</li>
+                  <li class="text-light">Paste</li>
+                </ul>
+              </div>
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy15" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text15" class="srccode">
+            <button class="mbn mmenu-call">show popup menu</button>
+
+            <button class="mbn-outline mdra">show popup menu</button>
+
+                <div class="mnav-dra">
+                  <div class="mnav-case bg-dark">
+                    <img src="{% static "images/site.jpg" %}" class="mimg">
+                    <ul class="mnav-item">
+                        <li class="mdra-close text-light">close</li>
+                        <li class="text-light">Language</li>
+                        <li class="text-light">Server</li>
+                        <li class="text-light">Lessons</li>
+                        <li class="text-light">Downloads</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <ul class="mmenu bg-dark">
+                    <li class="text-light">Reload App</li>
+                    <li class="text-light">Newfile</li>
+                    <li class="text-light">Save</li>
+                    <li class="text-light">Open in Browser</li>
+                    <li class="text-light">Copy</li>
+                    <li class="text-light">Paste</li>
+                </ul>
+                </textarea>
+              </div>
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5" id="shadowys">
+              <p class="h1 mtext-blue mmt-100">Shadow</p>
+              <div class="container-fluid">
+                <div class="container-fluid mround moverflow p-0 m-0" style="background-image: url('{% static "images/comp.jpg" %}'); background-size:cover; background-position:center;">
+                  <div class="d-flex justify-content-center align-items-center" style="background-image:linear-gradient(to right, rgba(52, 73, 94,0.7) ,rgb(65, 184, 131,0.7)); width: 100%; height: 200px;">
+                    <p class="h4 text-light">My phone Apps are Material Design</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mshadow mround mt-2 container" style="height:170px;"> </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy9" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text9" class="srccode" style="height: 200px;">
+
+      <div class="container-fluid">
+            <div class="container-fluid mround moverflow p-0 m-0" style="background-image: url('{% static "images/comp.jpg" %}'); background-size:cover; background-position:center;">
+                <div class="d-flex justify-content-center align-items-center" style="background-image:linear-gradient(to right, rgba(52, 73, 94,0.7) ,rgb(65, 184, 131,0.7)); width: 100%; height: 200px;">
+                    <p class="h4 text-light">My phone Apps are Material Design</p>
+                </div>
+            </div>
+      </div>
+                </textarea>
+              </div>
+
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5 mb-5">
+              <p class="h1 mtext-blue mmt-100 mb-5 p-0 m-0">Text Designs</p>
+              <div class="container-fluid p-0 m-0">
+                <p class="mupper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                <p class="mlower">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR</p>
+                <p class="munderline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                <p class="mcrossed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                <p>Lorem ipsum dolor sit amet, <span class="mbg-highlight">consectetur adipisicing elit, sed</span> do eiusmod tempor</p>
+                <p class="moverline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                <p class="mbreak">Loremipsumdolorsitamet,consecteturadipisicingelit,seddoeiusmodtemporLoremipsumdolorsitamet,consecteturadipisicingelit,<span class="gify">seddoeiusmodtemporLoremipsumdolorsitamet,consecteturadipisicingelit,seddoeiusmodtempor</span></p>
+              </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy10" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text10" class="srccode" >
+
+      <div class="container-fluid p-0 m-0">
+            <p class="mupper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p class="mlower">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR</p>
+            <p class="munderline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p class="mcrossed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p>Lorem ipsum dolor sit amet, <span class="mbg-highlight">consectetur adipisicing elit, sed</span> do eiusmod tempor</p>
+            <p class="moverline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p class="mbreak">Loremipsumdolorsitamet,consecteturadipisicingelit,seddoeiusmodtemporLoremipsumdolorsitamet,consecteturadipisicingelit,<span class="gify">seddoeiusmodtemporLoremipsumdolorsitamet,consecteturadipisicingelit,seddoeiusmodtempor</span></p>
+      </div>
+
+                </textarea>
+              </div>
+
+            </div>
+
+
+          <div class="container-fluid p-0 m-0 mt-5 mb-5">
+              <p class="h1 mtext-blue mmt-100 mb-2 p-0 m-0">Colors</p>
+              <p class="mb-5">Bootstrap colors are not included so start with <b>m</b> .mtext-purple.</p>
+              <div class="container-fluid p-0 m-0">
+                <p class="mtext-purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-puppy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-grand">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-mint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                <p class="mtext-iron">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                
+
+              </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy11" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text11" class="srccode">
+
+      <div class="container-fluid p-0 m-0">
+            <p class="mtext-purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-puppy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p> 
+            <p class="mtext-grand">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-mint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p class="mtext-iron">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>  
+       </div>
+
+                </textarea>
+              </div>
+
+            </div>
+
+
+            <div class="container-fluid p-0 m-0 mt-5 mb-5">
+              <p class="h1 mtext-blue mmt-100 mb-2 p-0 m-0">Background-colors</p>
+              <p class="mb-5">It is better to use these on buttons too because they respond with the animation.</p>
+              <div class="container-fluid p-0 m-0">
+
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-black" style="height: 70px;"><p>mbg-black</p></div>
+                 <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-iron" style="height: 70px;"><p>mbg-iron</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center bg-dark" style="height: 70px;"><p>bg-black <span class="text-muted">/*only bootstrap*/</span></p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-secondary" style="height: 70px;"><p>mbg-secondary</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-grand" style="height: 70px;"><p>mbg-grand</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-purple" style="height: 70px;"><p>mbg-purple</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-blue" style="height: 70px;"><p>mbg-blue</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-puppy" style="height: 70px;"><p>mbg-puppy</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-danger" style="height: 70px;"><p>mbg-danger</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-primary" style="height: 70px;"><p>mbg-primary</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-info" style="height: 70px;"><p>mbg-info</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-success" style="height: 70px;"><p>mbg-success</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-mint" style="height: 70px;"><p>mbg-mint</p></div>
+                <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-orange" style="height: 70px;"><p>mbg-orange</p></div>
+
+              </div>
+
+              <div class="container-fluid srccode-da mt-5 m-0 p-0">
+                <div class="d-flex justify-content-end p-0 m-0 container-fluid"><button id="copy12" class="mbn-outline-mint copyy">copy</button></div>
+                <textarea id="text12" class="srccode">
+
+      <div class="container-fluid p-0 m-0">
+                
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-black" style="height: 70px;"><p>mbg-black</p></div>
+             <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-iron" style="height: 70px;"><p>mbg-iron</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center bg-dark" style="height: 70px;"><p>bg-black <span class="text-muted">/*only bootstrap*/</span></p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-secondary" style="height: 70px;"><p>mbg-secondary</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-grand" style="height: 70px;"><p>mbg-grand</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-purple" style="height: 70px;"><p>mbg-purple</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-blue" style="height: 70px;"><p>mbg-blue</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-puppy" style="height: 70px;"><p>mbg-puppy</p></div>
+             <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-danger" style="height: 70px;"><p>mbg-danger</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-primary" style="height: 70px;"><p>mbg-primary</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-info" style="height: 70px;"><p>mbg-info</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-success" style="height: 70px;"><p>mbg-success</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-mint" style="height: 70px;"><p>mbg-mint</p></div>
+            <div class="container-fluid d-flex text-light justify-content-center align-items-center mbg-orange" style="height: 70px;"><p>mbg-orange</p></div>
+
+      </div>
+
+                </textarea>
+              </div>
+
+            </div>
+            <hr class="mt-5">
+
+
+            <div class="container">
+              <p class="text-center mfont-7" style="padding-top: 30px;">Thanks for the journey you<br> have taked.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-2 mine p-0 m-0 p-4 sticky-top-lg topy kiver">
+          <p class="mfont-6 mtext-blue">AppyMD Download</p>
+            <p class="">Get the source code package or compressed zip package. All versions are available on GitHub <i class="fab fa-github fa-2x mbg-highlight"></i>.</p>
+            <p class="pl-3 pt-2 mfont-5 mtext-blue">Get started</p>
+            <a href=" {% static 'zips/appymd.zip' %}" download>
+              <button id="downloa" class=" mbn mbg-mint dropdown-toggle btn-block downl">Download zip <i class="fas fa-file-archive"></i></button></a>
+              
+            <a href=" {% static 'zips.appymd.tar.gz' %}" download>
+            <button class="mbn-outline-mint btn-block downl">Download code &nbsp;&nbsp;<i class="fas fa-file-code"></i></i></button></a>
+            <p class="mt-2 messag">A download popup notification will appear and feel free to retry incase of an error is encountered but it's even rare.</p>
+            <p class="mtext-mint">Thank you.</p>
+            <p class="mt-2">Learn more <span class="mbg-highlight">About</span>.<br>AppyMD on our one application page. <span class="mbg-highlight mfont-3">No need to reload.</span></p>
+
+            <a class="" href="#"><p class="mt-3 text-center mbg-highlight minys mround"><i class="fas fa-envelope"></i> SignIn to keep updated.</p></a>
+            <div class="text-center">
+              <a href="#"><button class="mbn-round mbn-round-sm frind bg-info"><i class="fab fa-twitter text-light"></i></button></a>
+              <a href="#"><button class="mbn-round mbn-round-sm frind bg-primary"><i class="fab fa-facebook text-light"></i></button></a>
+              <a href="#"><button class="mbn-round mbn-round-sm frind bg-danger"><i class="fab fa-instagram text-light"></i></button></a>
+              <a href="#"><button class="mbn-round mbn-round-sm frind bg-primary"><i class="fab fa-skype text-light"></i></button></a>
+              <a href="#"><button class="mbn-round mbn-round-sm frind bg-success"><i class="fab fa-whatsapp text-light"></i></button></a>
+            </div>
+
+            <div class="container-fluid pt-3">
+              <p class="text-center mtext-blue mfont-3">Contact me<br>appymd@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+
+
+          
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+</script>
+
+<script type="text/Javascript" src="{% static 'js/main.js' %}"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#copy1').click(function(){
+      $(this).text('copied');
+      $('#text1').select();
+      document.execCommand('copy');
+    });
+    $('#copy2').click(function(){
+      $(this).text('copied');
+      $('#text2').select();
+      document.execCommand('copy');
+    });
+    $('#copy3').click(function(){
+      $(this).text('copied');
+      $('#text3').select();
+      document.execCommand('copy');
+    });
+    $('#copy4').click(function(){
+      $(this).text('copied');
+      $('#text4').select();
+      document.execCommand('copy');
+    });
+    $('#copy5').click(function(){
+      $(this).text('copied');
+      $('#text5').select();
+      document.execCommand('copy');
+    });
+    $('#copy6').click(function(){
+      $(this).text('copied');
+      $('#text6').select();
+      document.execCommand('copy');
+    });
+    $('#copy7').click(function(){
+      $(this).text('copied');
+      $('#text7').select();
+      document.execCommand('copy');
+    });
+    $('#copy8').click(function(){
+      $(this).text('copied');
+      $('#text8').select();
+      document.execCommand('copy');
+    });
+    $('#copy9').click(function(){
+      $(this).text('copied');
+      $('#text9').select();
+      document.execCommand('copy');
+    });
+    $('#copy10').click(function(){
+      $(this).text('copied');
+      $('#text10').select();
+      document.execCommand('copy');
+    });
+        $('#copy11').click(function(){
+      $(this).text('copied');
+      $('#text11').select();
+      document.execCommand('copy');
+    });
+    $('#copy12').click(function(){
+      $(this).text('copied');
+      $('#text12').select();
+      document.execCommand('copy');
+    });
+    $('#copy13').click(function(){
+      $(this).text('copied');
+      $('#text13').select();
+      document.execCommand('copy');
+    });
+    $('#copy14').click(function(){
+      $(this).text('copied');
+      $('#text14').select();
+      document.execCommand('copy');
+    });
+    $('#copy15').click(function(){
+      $(this).text('copied');
+      $('#text15').select();
+      document.execCommand('copy');
+    });
+  });
+
+var back1 = document.getElementById('copy1');
+var back2 = document.getElementById('copy3');
+var back3 = document.getElementById('copy12');
+var back4 = document.getElementById('copy15');
+var back5 = document.getElementById('copy14');
+var back6 = document.getElementById('copy13');
+var back7 = document.getElementById('copy11');
+var back8 = document.getElementById('copy10');
+var back9 = document.getElementById('copy9');
+var back10 = document.getElementById('copy8');
+var back11 = document.getElementById('copy7');
+var back12 = document.getElementById('copy6');
+var back13 = document.getElementById('copy5');
+var back14 = document.getElementById('copy4');
+var back15 = document.getElementById('copy2');
+
+var backyy = setInterval(function(){
+    back1.innerText = 'copy';
+    back2.innerText = 'copy';
+    back3.innerText = 'copy';
+    back4.innerText = 'copy';
+    back5.innerText = 'copy';
+    back6.innerText = 'copy';
+    back7.innerText = 'copy';
+    back8.innerText = 'copy';
+    back9.innerText = 'copy';
+    back10.innerText = 'copy';
+    back11.innerText = 'copy';
+    back12.innerText = 'copy';
+    back13.innerText = 'copy';
+    back14.innerText = 'copy';
+    back15.innerText = 'copy';
+}, 3000);
+
+$(document).ready(function(){
+  $('.navout').click(function(){
+    $('#menute').toggleClass('disno');
+  });
+})
+
+</script>
+  
+</body>
+
+</html>

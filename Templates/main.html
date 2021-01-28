@@ -1,0 +1,447 @@
+
+{% load static %}
+<html>
+</body>
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppyMD</title>
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %} ">
+  <script type="text/Javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/website.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/starter.css' %}">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
+  <script type="text/Javascript" src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+
+
+  <style type="text/css">
+    button{
+      border: none;
+      outline: none;
+    }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .sl1{
+        height: 100px;
+        width: 200px;
+      }
+      #bodyy{
+        background-image: url('{% static "images/home.jpg" %}');
+      }
+      .cavy{
+        background-image: url('{% static "images/home.jpg" %}');
+      }
+
+      footer{
+        background-image: linear-gradient(to right ,rgba(0,0,0,0.9), rgba(52, 73, 94,0.9));
+      }
+
+      #footer{
+        background-image: url('{% static "images/home.jpg" %}');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+<body class="p-0 m-0">
+
+
+<div class="container-fluid p-0 m-0 bg-dar" id="bodyy">
+  <div class="container-fluid d-flex h-100 text-center text-white bg-dar" id="ppag">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">AppyMD</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link nlink active" aria-current="page" href="#">Home</a>
+            <a class="nav-link nlink" href="#">Features</a>
+            <a class="nav-link nlink" href="#">Templates</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3">
+        <h1>welcome</h1>
+        <p class="mfont-3 lighttext">MATERIAL DESIGN is trending in App development with its native and 3d look.<br>Get this latest kit.</p>
+        <p>
+          <button class="mbn-outline-secondary">Learn more</button>
+          <a href="{% url 'sec' %}"><button class="mbn-outline-secondary">Download</button></a>
+        </p>
+      </main>
+
+      <footer class="mt-auto text-white-50 bg-dark">
+        
+      </footer>
+    </div>
+  </div>
+</div>
+
+<button id="thebtn" class="mbn-outline-secondary mbn-sm navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-2x"></i></button>
+
+
+<div class="container-fluid p-0 m-0 ntik">
+  <!-- ======= Header ======= -->
+      <nav class="navbar navbar-expand-sm sticy-top seeya navtik" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">AppyMD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            </ul>
+            <div>
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik2" aria-current="page" href="#abouty">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik3" aria-current="page" href="#fea">Features</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik4" aria-current="page" href="#teamm">Team</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik5" aria-current="page" href="#faqq">FAQ</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik6" aria-current="page" href="#fomme">Signin</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik7" aria-current="page" href="#subsc">Subscribe</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nlink" id="lik8" aria-current="page" href="#linkers">Links</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<div class="container-fluid p-0 m-0 pt-3 mbg-white" id="abouty">
+  <div class="container">
+    <div class="row justify-content-around" id="mrloy">
+      <div class="container-fluid col-md-6">
+        <p class="h2 mtext-dark">About</p>
+        <p class=" mfont-6">Residence</p>
+        <p class="mtext-grand fre1"><span class="munderline mtext-dark">Kampala Ug.</span><br>I am located in Uganda but also on the internet just like everyone. Find my projects on github, some are opensource and me on the media like Facebook, Twitter, Whatsapp and Skype.<br></p><br>
+        <p class="mfont-6 mtext-dark">Websites</p>
+        <p class="fre1">I want to also give you the websites I created first and then you can decided on my progress. And I hope if you are a learner you will progress too.<br>I will start with my first to current present.<br>
+          <ul class="fre1 list-unstyled lisss">
+            <li><a href="#" class="mtext-mint">UgCode.com</a></li>
+            <li><a href="#" class="mtext-mint">buckshops.com</a></li>
+          </ul>
+          <p class="fre1 mfont-3">Don't mind what they do, I also wanted to have a sit on the www.---.com Internet at that time.</p>
+        </p>
+      </div>
+      <div class="container-fluid col-md-5 mdd">
+        <p class="h2 mtext-dark">AppyMD Start</p>
+        <p class="mfont-6">Years active</p>
+        <p class="mtext-grand fre1">AppyMD is a project that I have been working on for over 2months non-stop. Its because I wanted to develop apps faster so I had to make myself a widgets KIT. <br><br>I choose it to be based on Google MATERIAL DESIGN and Bootstrap 5 due to their beauty, reponsiveness, simple to learn and time saving.<br>Now I have made it for everyone, <span class="mtext-mint">FOSS</span> Use if you want.<br><br>Release date: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mtext-mint font-weight-bold pr-4">AppyMD 11</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jan. 27 2021</p><br>
+        <p class="mfont-4 mbg-highlight">Thank You for the visit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid mb " id="fea">
+    <div class="container">
+      <p class="mfont-7 mtext-dark">AppyMD Mantainance</p>
+      <hr class="hie">
+      <div class="row pb-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+        <div class="col">
+            <div class="container-fluid p-0 m-0 pb-4 mround mbg-white mshadow">
+            <div class="text-center">
+              <button class="mbn-round mbg-mint text-light frr"><i class="fas fa-users"></i></button>
+            </div>
+            <p class="text-center">
+              <span class="mfont-10 font-weight-bold">120</span><br><span class="mfont-2 bebe mtext-blue">greateful for the work</span><br><span class="mfont-2 text-success">Thank you</span></p>
+          </div>
+        </div>
+
+          <div class="col">
+            <div class="container-fluid p-0 m-0 pb-4 mround mbg-white mshadow">
+            <div class="text-center">
+              <button class="mbn-round mbg-mint text-light frr"><i class="fas fa-project-diagram"></i></button>
+            </div>
+            <p class="text-center">
+              <span class="mfont-10 font-weight-bold">4</span><br><span class="mfont-2 bebe mtext-blue">Projects worked on</span><br><span class="mfont-2">On <span class="text-success">Github</span></span></p>
+          </div>
+        </div>   
+
+          <div class="col">
+            <div class="container-fluid p-0 m-0 pb-4 mround mbg-white mshadow">
+            <div class="text-center">
+              <button class="mbn-round mbg-mint text-light frr"><i class="fas fa-globe-africa fa-2x"></i></button>
+            </div>
+            <p class="text-center">
+              <span class="mfont-10 font-weight-bold">1247</span><br><span class="mfont-2 mtext-blue font-weight-bold bebe">Visited the website</span><br><span class="mfont-2"><span class="text-success">Django</span> Mentainance</span></p>
+          </div>
+        </div> 
+
+          <div class="col">
+            <div class="container-fluid p-0 m-0 pb-4 mround mbg-white mshadow">
+            <div class="text-center">
+              <button class="mbn-round mbg-mint text-light frr"><i class="fab fa-facebook-f fa-2x"></i></button>
+            </div>
+            <p class="text-center">
+              <span class="mfont-10 font-weight-bold">2k</span><br><span class="mfont-2 mtext-blue font-weight-bold bebe">Follows on FaceBook</span><br><span class="mfont-2"><span class="text-success">Learn</span> and <span class="text-success">share</span></span></p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid mbg-white">
+    <div class="container pb-5 pt-5">
+      <div class=" pt-5 pb-5">
+        <div class="row mt-5">
+          <div class="col-md-7 d-flex justify-content-center flex-column">       
+            <p class="h2 mtext-blue">What is AppyMD ?</p>
+            <p class="mtext-grand p-lg-2">First of all, AppyMD is a very small css kit with little javascript and jquery based on bootstrap 5 to give you a Mobile material design best on the new Android versions. <br>So if a new Android version comes out, except a new kit.<br><br>Remember the kit is best for mobile devices and tables, it won't work fine on websites except if you which to add more and more Bootstrap & CSS like I did.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="{% static 'images/details-1.png' %}" class="mimg">
+          </div>
+        </div>
+        <div class="row mt-5 divyy">
+          <div class="col-md-5">
+            <img src="{% static 'images/details-2.png' %}" class="mimg">
+          </div>
+          <div class="col-md-7 d-flex justify-content-center flex-column">
+            <p class="h2 mtext-blue">Material Design for AppyMD.</p>
+            <p class="mtext-grand p-lg-2">Material design is unique since it creates 3D like widget on your screen. Now I think this is why <br> Tech giant <span>g</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span> decided to push it forward by using it in all its Apps. Witness from <b>google-playstore, google-drive etc</b> yet thats not all, even in their websites and browsers. <b>google chrome</b><br><br>Now google brings new styles for MD in each new android version. So <b>AppyMD</b> is to depend on Android version releases and bootstrap with alot of added CSS.<br><span class="mfont-9">So </span> this is kit Android 11.</p>
+          </div> 
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-7 d-flex justify-content-center flex-column">       
+            <p class="h2 mtext-blue">How the kit helps.</p>
+            <p class="mtext-grand p-lg-2">AppyMD modifies and adds widgets that are Material Design components. They are nice looking on mobile devices with just a simple additional CSS.<br><br> Please promise me to have learnt <b>CSS</b> and <b>HTML5</b> and also don't forget <b>javascript</b> so you can be a proud programmer and this kit is just to save you time since you will get very many projects coming in as time passes.<br><br>But the kit is very googd for making App. Try a simple one with a framework called <b>CORDOVA</b> that helps in turning it into an APK file and utilizing the <b>API</b> of the os. </p>
+          </div>
+          <div class="col-md-5">
+            <img src="{% static 'images/details-3.png' %}" class="mimg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0 m-0 text-light cavy text-center">
+
+<div class="container-fluid newby">
+    <div class="container-fluid p-0 m-0" id="caroy1">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="iny" style="background-image: url({% static 'images/comp.jpg' %}); background-position:left; background-size: cover; "></div>
+      </div>
+      <p class="mb-3"><span class="h5 mb-2">Rogers Appy</span><br>
+      Programmer</p>
+      <p class="metxt mfont-3">I am a programmer located in Kampala the Capital city of Uganda. I love coding so much <br> that am willing to teach people who are near me in Ug. Kampala.</p>
+      <p class="mfont-1" style="word-spacing: 10px;"><span class="mtext-mint ca1"><i class="fas fa-circle"></i></span> <i class="fas fa-circle ca2"></i> <i class="fas fa-circle ca3"></i></p>
+    </div>
+
+    <div class="container-fluid p-0 m-0" id="caroy2">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="iny" style="background-image: url({% static 'images/codey.jpg' %}); background-position:center; background-size: cover; "></div>
+      </div>
+      <p class="mb-3"><span class="h5 mb-2">Skills in Coding</span><br>
+      Programmer</p>
+      <p class="metxt mfont-3">I am skilled in Python atleast <span class="mtext-puppy">70%</span> HTML <span class="mtext-puppy">97%</span>, CSS <span class="mtext-puppy">80%</span> Javascript <span class="mtext-puppy">60%</span> and C++ <span class="mtext-puppy">35%</span><br> but I can handle numerous things in Python just because it is very wide.</p>
+      <p class="mfont-1" style="word-spacing: 10px;"><i class="fas fa-circle ca1"></i> <span id="ca2" class="mtext-mint ca2"><i class="fas fa-circle"></i></span>  <i class="fas fa-circle ca3"></i></p>
+    </div>
+
+    <div class="container-fluid p-0 m-0" id="caroy3">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="iny" style="background-image: url({% static 'images/python-logo.svg' %}); background-position:left; background-size: cover; "></div>
+      </div>
+      <p class="mb-3"><span class="h5 mb-2">Projects</span><br>
+      Programmer</p>
+      <p class="metxt mfont-3">I have open projects on <span class="mtext-puppy">github <i class="fab fa-github"></i></span> but to tell you, just visit my github page,<br> clone the repository and work in a comfortable environment or editor<br> as you update the repo.</p>
+      <p class="mfont-1" style="word-spacing: 10px;"> <i class="fas fa-circle ca1"></i> <i class="fas fa-circle ca2"></i> <span id="ca3" class="mtext-mint ca2"><i class="fas fa-circle ca3"></i></span></p>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <div class="container-fluid mbg pt-4 p-0 m-0" id="faqq">
+    <div class="container mbg-white pt-3 pb-5 mb-5 mshadow">
+      <p class="h2 mtext-blue">FAQ ? <span class="h4">frequently asked questions.</span></p>
+      <p class="mfont-3">There are <span class="mtext-mint">no questions</span> yet but you can add one below there.</p>
+      <div>
+        <p class="quest">Is AppyMD Open Source ?</p>
+        <p class="mt-0 mfont-3 mtext-grand answ">Yes! totally open source kit is paid for.</p>
+      </div>
+
+      <div class="col-md-6">
+        <form class="form-group input-group">
+          <input type="text" class="form-control" name="">
+          <button class="mbn mbg-mint">ask ?</button>
+        </form>
+        <p class="mfont-2 text-danger">Sorry our database is under rebuild.<br>The question won't be submited.<i class="fas fa-exclamation-triangle"></i></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-md-4 pl-5 mshadow mbg-white mt-2 pt-3 mb-5 pt-5 pb-5">
+          <div class="row">
+            <div class="col-2">
+              <button class="mbn-round mtext-blight"><i class="fas fa-location-arrow"></i></button>
+            </div>
+            <div class="col-8 text-left">
+              <p class="h3 mtext-blue">Loaction</p>
+              <p class="mtext-blue mfont-3">Africa Uganda Kampala</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <button class="mbn-round mtext-blight"><i class="fas fa-envelope"></i></button>
+            </div>
+            <div class="col-8 text-left">
+              <p class="h3 mtext-blue">Email</p>
+              <p class="mtext-blue mfont-3">appymd@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <button class="mbn-round mtext-blight"><i class="fas fa-phone"></i></button>
+            </div>
+            <div class="col-8 text-left">
+              <p class="h3 mtext-blue">Call</p>
+              <p class="mtext-blue mfont-3">+256 95518 0447</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-md-7 mshadow mbg-white mt-2 pt-3 mb-5 pt-5 pb-5" id="fomme">
+          <p class="text-center h3 p-0 m-0 mb-2 mtext-blue">Signin the website</p>
+          <div class="row justify-content-around">
+            <form class="form-group row justify-content-around">
+              <div class="col-md-5">
+                <label class="mb-2">Username</label>
+                <input type="text" class="form-control" name="">
+              </div>
+            
+              <div class="col-md-5 form-group">
+                <label class="mb-2">Email</label>
+                <input type="text" class="form-control" name="">
+               </div>
+
+              <div class="col-md-11 mt-3 form-group">
+                <label class="mb-2">Any message to me.</label>
+                <input type="text" class="form-control" name="">
+              </div>
+
+              <div class="col-md-12 mt-4 text-center">
+                <p class="mfont-2 text-danger">Sorry our database is under rebuild.<br>The form won't be submited.<i class="fas fa-exclamation-triangle"></i></p>
+                <button class="mbn mbg-mint">submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<div class="container-fluid p-0 m-0" id="footer">
+  <footer class="p-0 m-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container d-flex justify-content-center align-items-center col-md-5" id="linkers">
+          <div class="container-fluid coat mt-5 mb-5 pb-5">
+            <p class="text-center h3 pt-3">AppyMD</p>
+            <p class="text-center mt-3 mfont-3">I am greatful for coming to my website.<br>Visit and utilise all the compontents you like.</p>
+            <p class="text-center">location<br>Kampala, Uganda</p>
+            <p class="text-center mfont-2">Phone: +256 95518 0447<br>Email: appymd@gmail.com</p>
+            <div class="text-center">
+              <button class="mbn-round mbn-round-sm frind"><i class="fab fa-twitter text-light"></i></button>
+              <button class="mbn-round mbn-round-sm frind"><i class="fab fa-facebook text-light"></i></button>
+              <button class="mbn-round mbn-round-sm frind"><i class="fab fa-instagram text-light"></i></button>
+              <button class="mbn-round mbn-round-sm frind"><i class="fab fa-skype text-light"></i></button>
+              <button class="mbn-round mbn-round-sm frind"><i class="fab fa-whatsapp text-light"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid col-md-7">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-6 mt-5">
+              <p class="h5 mb-4">Website links</p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Home</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">About us</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Our Services</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Terms for services</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Privacy Policy</a></p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 mt-5 mb-3">
+              <p class="h5 mb-4">My Services</p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Web Design</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Developer</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Software Developer</a></p>
+              <p class="mfont-3"><a class=" alin lighttext" href="#">Graphics Design</a></p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <p class="h5 mt-5 mb-4">Signin our website</p>
+              <p class="mfont-3 p-2">You will get updates for new versions of our kit. And remember it is open source.</p>
+              <form class="form-group input-group subb" id="subsc">
+                <input type="email" placeholder="Email" class="form-control" name="">
+                <button class="mbn mbg-mint">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center pb-5">
+        <hr class="lighttext">
+        <p class="text-center mfont-3">@Copyright AppyMD. Open source</p>
+        <p class="mfont-3">designed by <a href="#">appymd.</a></p>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
+
+
+<script type="text/Javascript" src="{% static 'js/main.js' %}"></script>
+
+
+    
+  </body>
+</html>
